@@ -2,11 +2,23 @@
   "routes": [
     {
       "src": "/admin/(.*)",
-      "dest": "/admin/$1"
+      "dest": "/hexadash-react/build/$1"
+    },
+    {
+      "src": "/admin",
+      "dest": "/hexadash-react/build/index.html"
+    },
+    {
+      "src": "/client/(.*)",
+      "dest": "/client/build/$1"
+    },
+    {
+      "src": "/client",
+      "dest": "/client/build/index.html"
     },
     {
       "src": "/(.*)",
-      "dest": "/client/$1"
+      "dest": "/client/build/$1"
     }
   ]
 }
